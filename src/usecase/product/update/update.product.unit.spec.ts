@@ -1,6 +1,7 @@
 import Product from "../../../domain/product/entity/product";
 import ProductFactory from "../../../domain/product/factory/product.factory";
 import ProductService from "../../../domain/product/service/product.service";
+import UpdateProductUseCase from "./update.product.usecase";
 
 const product = new Product("123", "Product 1", 0);
 const input = {
@@ -19,8 +20,8 @@ const MockRepository = () => {
     }
 }
 
-describe("Unit test for product update use case", async () => {
-    it("should update the product", async () =>{
+describe("Unit test for product update use case", () => {
+    it("should update the product", async () => {
         const productRepository = MockRepository();
         const productUpdateUseCase = new UpdateProductUseCase(productRepository);
 

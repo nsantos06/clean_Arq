@@ -1,10 +1,10 @@
-export interface InputUpdateCustomerDto{
+export interface InputUpdateProductDto{
     id: string;
     name: string;
     price: number;
 }
 
-export interface OutputUpdateCustomerDto{
+export interface OutputUpdateProductDto{
     id: string;
     name: string;
     price: number;
