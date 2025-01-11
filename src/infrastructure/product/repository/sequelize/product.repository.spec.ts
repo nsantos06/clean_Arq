@@ -11,6 +11,7 @@ describe("Product repository test", () => {
       dialect: "sqlite",
       storage: ":memory:",
       logging: false,
+      models:[ProductModel],
       sync: { force: true },
     });
     sequileze.addModels([ProductModel]);
