@@ -26,12 +26,6 @@ describe("Test create product use case", () => {
 
 
 it("should create a product", async () => {
-    //const productRepository = new ProductRepository();
-     //const usecase = new FindProductUseCase(productRepository);
-        
-        //const product = new Product("123", "Produto 1", 10); 
-        //await productRepository.create(product);
-
     const productRepository = new ProductRepository();
     const usecase = new CreateProductUseCase(productRepository);
 
