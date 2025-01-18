@@ -31,7 +31,7 @@ describe("Test find product use case", () => {
     const productRepository = new ProductRepository();
     const usecase = new FindProductUseCase(productRepository);
     
-    const product = new Product("123", "P1", 10); 
+    const product = new Product("123", "Produto 1", 10); 
     await productRepository.create(product);
   
     const input = {
@@ -40,7 +40,7 @@ describe("Test find product use case", () => {
   
     const output = {
       id: "123",
-      name: "P1",
+      name: "Produto 1",
       price: 10,
     }
   
